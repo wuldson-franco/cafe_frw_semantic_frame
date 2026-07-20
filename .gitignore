@@ -6,7 +6,6 @@ dados/
 
 # ── Saídas dos notebooks ──────────────────────────────────────────────────────
 *.xlsx
-*.csv
 *.pdf
 *.html
 *.pkl
