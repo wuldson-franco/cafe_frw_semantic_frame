@@ -24,9 +24,9 @@ requisitos = {
 embeddings_requisitos = modelo.encode(list(requisitos.values()), convert_to_tensor=True)
 nomes_requisitos = list(requisitos.keys())
 
-# 3. Função Estrita para Isolar APENAS a Fase de Instrução
+# 3. Função para isolar a fase de instrução do documento
 def isolar_fase_instrucao(texto):
-    # Procura o bloco entre o início da Análise/Instrução e o início da Conclusão/Decisão
+    # Procura o bloco entre o início da Instrução e o início da Conclusão
     padrao = re.search(
         r'(?i)(?:3\.\s*ANÁLISE|DA ANÁLISE|DA INSTRUÇÃO|FUNDAMENTAÇÃO)'  # Início
         r'(.*?)'                                                         # Miolo (Fase de Instrução)
